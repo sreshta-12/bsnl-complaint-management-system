@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# bsnl-complaint-management-system
-=======
+
 # BSNL Complaint Management System
 
 A web-based complaint management system for BSNL that allows customers to file complaints across different service categories (Landline, Mobile, Bharat Fibre, Prepaid, Postpaid, etc.). Admins can forward complaints to appropriate staff based on circle and department. Staff can manage, resolve, and update complaint status via a dedicated dashboard.
