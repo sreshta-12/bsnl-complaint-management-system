@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/message') %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white text-center">
+          <h4><i class="fas fa-sign-in-alt"></i> Login to BSNL Portal</h4>
+        </div>
+
+        <div class="card-body">
+          <form action="/users/login" method="POST">
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input required type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input required type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+
+            <!-- Captcha -->
+            <div class="form-group">
+              <label for="captcha">Enter Captcha</label><br>
+              <img src="/users/captcha" alt="Captcha Image" class="mb-2" />
+              <input required type="text" name="captcha" class="form-control" placeholder="Enter captcha shown above">
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block mt-3">🔐 Sign In</button>
+          </form>
+        </div>
+
+        <div class="card-footer text-center">
+          <p class="mb-1">Don't have an account? <a href="/users/signup">Sign Up</a></p>
+          <a href="/users/reset" class="text-warning">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

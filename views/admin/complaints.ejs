@@ -1,0 +1,125 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="alert alert-success" role="alert" style="margin: 10px 60px;">
+  <strong>Welcome To Admin Dashboard Mr. <%= admin.name %>!</strong>
+</div>
+
+<section id="admin-dashboard">
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/dashboard" role="tab">
+          <i class="fas fa-tools"></i> Create Account
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/admin/complaints" role="tab">
+          <i class="fas fa-envelope-open-text"></i> Complaints
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/users/display" role="tab">
+          <i class="fas fa-user-ninja"></i> Users
+        </a>
+      </li>
+    </ul>
+
+    <div class="row my-5">
+      <!-- Display Complaints -->
+      <div class="col" id="display-complaints">
+        <div class="card">
+          <div class="card-header">Complaints</div>
+          <div class="card-body" style="overflow: auto;">
+            <ul class="list-group list-group-flush">
+              <% const filterComplaints = complaints.filter(c => !c.forwardTo) %>
+              <% filterComplaints.forEach((complaint) => { %>
+                <li class="list-group-item">
+                  <strong><%= complaint.description %></strong><br>
+
+                  <!-- Show Circle and Status -->
+                  <small><strong>Circle:</strong> <%= complaint.circle %> | 
+                         <strong>Status:</strong> <%= complaint.status || 'Pending' %></small><br>
+
+                  <a href="#" onclick="updateStatus('<%= complaint._id %>')" class="btn btn-sm btn-outline-primary float-right ml-2">Update</a>
+                  <a href="#" onclick="forward('<%= complaint._id %>')" class="btn btn-sm btn-outline-success float-right ml-2">Forward</a>
+                </li>
+              <% }); %>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forward Complaints -->
+      <div class="col-md-4" id="forward-complaints" style="display: none;">
+        <div class="card">
+          <div class="card-header">Forward Complaint To:</div>
+          <div class="card-body">
+            <form action="/admin/complaints/forward" method="post">
+              <div class="form-group">
+                <select name="staffId" class="custom-select" required>
+                  <% staff.forEach((s) => { %>
+                    <option value="<%= s._id %>"><%= `${s.name} (${s.department})` %></option>
+                  <% }) %>
+                </select>
+              </div>
+              <input type="hidden" name="complaintId" id="complaint">
+              <button type="submit" class="btn btn-primary btn-block">Forward</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Complaint Status Update Section -->
+<div class="col-md-4" id="status-update-box">
+  <div class="card mt-3">
+    <div class="card-header">Update Complaint Status</div>
+    <div class="card-body">
+      <form action="/admin/complaints/update-status" method="POST">
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select name="status" class="form-control" required>
+            <option value="New">New</option>
+            <option value="Assigned">Assigned</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Escalated">Escalated</option>
+            <option value="Resolved">Resolved</option>
+            <option value="Closed">Closed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="eta">Expected Resolution Time</label>
+          <input type="text" name="eta" class="form-control" placeholder="e.g. 2 days or 24 hours">
+        </div>
+        <div class="form-group">
+          <label for="adminNote">Admin Note</label>
+          <textarea name="adminNote" class="form-control" rows="3" placeholder="Optional message to user"></textarea>
+        </div>
+        <input type="hidden" name="complaintId" id="statusComplaintId">
+        <button type="submit" class="btn btn-success btn-block">Update Status</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function updateStatus(cid) {
+    document.getElementById("statusComplaintId").value = cid;
+    document.getElementById("status-update-box").scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function forward(cid) {
+    const displayComplaints = document.getElementById('display-complaints');
+    const forwardComplaints = document.getElementById('forward-complaints');
+    displayComplaints.classList.add('col-md-8');
+    forwardComplaints.style.display = 'block';
+    document.getElementById("complaint").value = cid;
+  }
+</script>
+
+<%- include('../partials/footer') %>

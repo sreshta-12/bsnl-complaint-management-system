@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-header bg-info text-white text-center">
+          <h4>🔑 Verify Mobile OTP</h4>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="/users/verify-otp">
+            <div class="form-group">
+              <label>OTP sent to your mobile</label>
+              <input type="text" name="otp" class="form-control" required placeholder="Enter 6-digit OTP">
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Verify & Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

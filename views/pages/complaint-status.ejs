@@ -1,0 +1,68 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="container mt-5 mb-5">
+  <div class="card shadow-sm p-4">
+    <h3 class="text-primary mb-4 text-center"> Check Complaint Status</h3>
+
+    <!-- Status Check Form -->
+    <form action="/complaints/status" method="POST" class="p-3 border bg-light">
+      <div class="form-group">
+        <label for="complaintId"><strong>Complaint Reference Number <span class="text-danger">*</span></strong></label>
+        <input
+          type="text"
+          name="complaintId"
+          id="complaintId"
+          class="form-control"
+          placeholder="Enter your Complaint ID"
+          required
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-search"></i> Check Status
+        </button>
+      </div>
+    </form>
+
+    <!-- Complaint Not Found -->
+    <% if (notFound) { %>
+      <div class="alert alert-danger mt-4 text-center">
+         Complaint not found. Please check your reference ID.
+      </div>
+    <% } %>
+
+    <!-- Complaint Found -->
+    <% if (complaint) { %>
+      <div class="mt-5">
+        <h5 class="text-success text-center"> Complaint Found</h5>
+        <ul class="list-group mt-3">
+          <li class="list-group-item"><strong>Complaint ID:</strong> <%= complaint._id %></li>
+          <li class="list-group-item"><strong>Status:</strong>
+            <% if (complaint.status === 'pending') { %>
+              <span class="badge badge-warning">Pending</span>
+            <% } else if (complaint.status === 'resolved') { %>
+              <span class="badge badge-success">Resolved</span>
+            <% } else { %>
+              <span class="badge badge-info"><%= complaint.status %></span>
+            <% } %>
+          </li>
+          <li class="list-group-item"><strong>Service Type:</strong> <%= complaint.serviceType %></li>
+          <li class="list-group-item"><strong>Description:</strong> <%= complaint.description %></li>
+          <li class="list-group-item"><strong>Submitted On:</strong>
+            <%= complaint.createdAt ? complaint.createdAt.toLocaleString('en-IN', {
+              day: '2-digit', month: 'short', year: 'numeric',
+              hour: '2-digit', minute: '2-digit'
+            }) : 'N/A' %>
+          </li>
+          <% if (complaint.staffNote) { %>
+            <li class="list-group-item"><strong>Staff Reply:</strong> <%= complaint.staffNote %></li>
+          <% } %>
+        </ul>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

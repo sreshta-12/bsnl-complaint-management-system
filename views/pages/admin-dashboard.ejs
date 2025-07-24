@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="container mt-5 mb-5">
+  <div class="card shadow-sm p-4 border-0">
+    <h3 class="text-center mb-4 text-primary">
+      🧑‍💼 Admin Dashboard
+    </h3>
+
+    <!-- Flash messages (optional) -->
+    <%- include('../partials/messages') %>
+
+    <div class="list-group">
+      <a href="/admin/complaints" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <span>📋 View & Assign Complaints</span>
+        <i class="fas fa-chevron-right text-muted"></i>
+      </a>
+      <a href="/admin/users/display" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <span>👥 View All Users (Staff/Admin/Customers)</span>
+        <i class="fas fa-chevron-right text-muted"></i>
+      </a>
+      <a href="/admin/register" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <span>➕ Register New Staff or Admin</span>
+        <i class="fas fa-chevron-right text-muted"></i>
+      </a>
+      <a href="/admin/reports" class="list-group-item list-group-item-action disabled d-flex justify-content-between align-items-center">
+        <span>📊 View Reports (Coming Soon)</span>
+        <i class="fas fa-clock text-muted"></i>
+      </a>
+    </div>
+
+    <!-- User Info -->
+    <div class="mt-4 text-center">
+      <p class="text-muted mb-0">
+        Logged in as <strong><%= user?.role?.toUpperCase() %></strong> – <%= user?.email %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

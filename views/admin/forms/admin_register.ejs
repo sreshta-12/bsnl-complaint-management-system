@@ -1,0 +1,67 @@
+
+<div class="text-center mt-4">
+  <div class="container">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0"><i class="fas fa-user-shield"></i> Register Admin</h5>
+      </div>
+      <div class="card-body">
+
+        <form action="/admin/users/register" method="POST">
+          <!-- Name -->
+          <div class="form-group">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Name"
+              value="<%= typeof name !== 'undefined' ? name : '' %>" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Email"
+              value="<%= typeof email !== 'undefined' ? email : '' %>" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <input 
+              type="password" 
+              name="password" 
+              placeholder="Password"
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-group">
+            <input 
+              type="password" 
+              name="confirmPassword" 
+              placeholder="Re-enter Password"
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <!-- Hidden Role Field -->
+          <input type="hidden" name="role" value="admin" />
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

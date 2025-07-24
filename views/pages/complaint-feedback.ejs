@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/_messages') %>
+
+<div class="container mt-5">
+  <div class="card shadow-sm p-4">
+    <h4 class="text-center text-primary mb-4">📋 Feedback for Complaint</h4>
+
+    <form action="/feedback/submit" method="POST">
+      <input type="hidden" name="complaintId" value="<%= complaint._id %>">
+
+      <div class="form-group">
+        <label><strong>How satisfied are you with the resolution?</strong></label>
+        <select name="rating" class="form-control" required>
+          <option value="">-- Select Rating --</option>
+          <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+          <option value="4">⭐️⭐️⭐️⭐️ Very Good</option>
+          <option value="3">⭐️⭐️⭐️ Good</option>
+          <option value="2">⭐️⭐️ Fair</option>
+          <option value="1">⭐️ Poor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label><strong>Your Comments (optional)</strong></label>
+        <textarea name="comments" class="form-control" rows="4" placeholder="Write any suggestions or feedback..."></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-success">
+          <i class="fas fa-paper-plane"></i> Submit Feedback
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

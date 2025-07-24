@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="container mt-5">
+  <h4 class="text-center text-info mb-4">📜 Your Complaint History</h4>
+
+  <% if (complaints.length === 0) { %>
+    <div class="alert alert-warning text-center">
+      You haven’t submitted any complaints yet.
+    </div>
+  <% } else { %>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover bg-white">
+        <thead class="thead-light">
+          <tr>
+            <th>Complaint ID</th>
+            <th>Service</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% complaints.forEach(c => { %>
+            <tr>
+              <td><%= c._id %></td>
+              <td><%= c.serviceType %></td>
+              <td>
+                <% if (c.status === 'pending') { %>
+                  <span class="badge badge-warning">Pending</span>
+                <% } else if (c.status === 'resolved') { %>
+                  <span class="badge badge-success">Resolved</span>
+                <% } else { %>
+                  <span class="badge badge-info"><%= c.status %></span>
+                <% } %>
+              </td>
+              <td><%= c.date.toDateString() %></td>
+              <td><%= c.description || 'N/A' %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

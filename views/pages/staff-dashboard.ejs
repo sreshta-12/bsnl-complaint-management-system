@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="container mt-5">
+  <div class="card shadow-sm p-4">
+    <h3 class="text-center text-success mb-3">🛠️ Staff Dashboard</h3>
+
+    <!-- Optional: Flash Messages -->
+    <%- include('../partials/messages') %>
+
+    <p class="text-center">
+      Welcome, <strong><%= user.name %></strong>! You are logged in as <span class="badge badge-secondary text-uppercase"><%= user.role %></span>
+    </p>
+
+    <hr />
+
+    <div class="text-center mt-4">
+      <a href="/staff/complaints" class="btn btn-outline-primary btn-lg">
+        <i class="fas fa-tasks"></i> View Assigned Complaints
+      </a>
+    </div>
+
+    <div class="text-center mt-4 text-muted">
+      <small>Need help? Contact your admin for complaint assignment or dashboard access.</small>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

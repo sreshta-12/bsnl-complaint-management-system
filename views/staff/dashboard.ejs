@@ -1,0 +1,125 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="alert alert-success" role="alert" style="margin: 10px 50px;">
+    <strong>Welcome To Staff Dashboard, <%= staff.name %>!</strong>
+</div>
+
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="staffs-tab" data-toggle="tab" href="#staffs" role="tab"
+                aria-controls="staffs" aria-selected="true">
+                <i class="fas fa-user"></i> Assigned Complaints
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="complaints-tab" href="/staff/complaints" role="tab"
+                aria-controls="complaints" aria-selected="false">
+                <i class="fas fa-history"></i> Complaints History
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTab">
+        <div class="tab-pane fade show active" id="staffs" role="tabpanel" aria-labelledby="staffs-tab">
+            <div class="row">
+
+                <!-- Complaints Table -->
+                <div class="col-md-8 mt-3" id="complaints">
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <strong>Pending Complaints Assigned to You</strong>
+                        </div>
+                        <div class="card-body">
+                            <% if (complaints.length === 0) { %>
+                                <p class="text-muted">No complaints assigned yet.</p>
+                            <% } else { %>
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>#</th>
+                                            <th><i class="fas fa-bullhorn"></i> Complaint</th>
+                                            <th><i class="fas fa-calendar-alt"></i> Date</th>
+                                            <th>📝 Staff Reply</th>
+                                            <th>✏️ Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% let count = 1;
+                                           const pending = complaints.filter(c => c.status !== 'Resolved' && c.status !== 'Closed'); %>
+                                        <% pending.forEach((complaint) => { %>
+                                            <tr>
+                                                <td><%= count++ %></td>
+                                                <td><%= complaint.description %></td>
+                                                <td>
+                                                    <%= complaint.createdAt
+                                                        ? new Date(complaint.createdAt).toLocaleDateString()
+                                                        : (complaint.date
+                                                            ? new Date(complaint.date).toLocaleDateString()
+                                                            : 'N/A') %>
+                                                </td>
+                                                <td><%= complaint.staffNote || '—' %></td>
+                                                <td>
+                                                    <a href="#" onclick="showreplyBox('<%= complaint._id %>')">Reply <i class="fas fa-pencil-alt"></i></a>
+                                                    <input id="desc_<%= complaint._id %>" type="hidden" value="<%= complaint.description %>" />
+                                                </td>
+                                            </tr>
+                                        <% }) %>
+                                    </tbody>
+                                </table>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reply Form -->
+                <div class="col-md-4 mt-4" style="display: none;" id="reply-field">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Respond to Complaint:</strong>
+                            <p id="complaint-text" class="mt-2 mb-0 text-muted small"></p>
+                        </div>
+                        <div class="card-body">
+                            <form action="/staff/complaints/update-status" method="POST">
+                                <div class="form-group">
+                                    <label for="feedback">Reply / Update</label>
+                                    <textarea name="feedback" placeholder="Reply to Complaint..." class="form-control" style="height:100px;" required></textarea>
+                                    <input type="hidden" name="complaintId" id="complaintId" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Update Status</label>
+                                    <select name="status" class="form-control" required>
+                                        <option value="">Select Status</option>
+                                        <option value="In Progress">In Progress</option>
+                                        <option value="Resolved">Resolved</option>
+                                        <option value="Closed">Closed</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block my-3">Submit Reply</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const replyField = document.getElementById('reply-field');
+    const complaintText = document.getElementById("complaint-text");
+    const complaintId = document.getElementById('complaintId');
+
+    function showreplyBox(id) {
+        const body = document.getElementById("desc_" + id).value;
+        complaintText.innerHTML = body;
+        complaintId.value = id;
+        replyField.style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+<%- include('../partials/footer') %>

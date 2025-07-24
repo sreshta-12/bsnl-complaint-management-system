@@ -1,0 +1,59 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="container mt-5">
+  <h3 class="text-center mb-4"> Complaints History</h3>
+
+  <% if (complaints.length === 0) { %>
+    <div class="alert alert-info text-center">
+      No complaints assigned to you yet.
+    </div>
+  <% } else { %>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Staff Reply</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% let count = 1; %>
+          <% complaints.forEach(complaint => { %>
+            <tr>
+              <td><%= count++ %></td>
+              <td><%= complaint.serviceType %></td>
+              <td><%= complaint.description %></td>
+              <td>
+                <% if (complaint.status.toLowerCase() === 'done') { %>
+                  <span class="badge badge-success">Resolved</span>
+                <% } else { %>
+                  <span class="badge badge-warning">In Progress</span>
+                <% } %>
+              </td>
+              <td><%= complaint.staffNote || '—' %></td>
+              <td>
+                <%= complaint.updatedAt
+                    ? new Date(complaint.updatedAt).toLocaleString()
+                    : new Date(complaint.createdAt).toLocaleString() %>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+
+  <div class="text-center mt-4">
+    <a href="/staff/dashboard" class="btn btn-outline-primary">
+      ⬅ Back to Dashboard
+    </a>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

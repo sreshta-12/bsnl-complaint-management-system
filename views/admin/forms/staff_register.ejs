@@ -1,0 +1,131 @@
+<div class="text-center mt-4">
+  <div class="container">
+    <div class="card shadow-sm">
+      <div class="card-header bg-info text-white">
+        <h5 class="mb-0"><i class="fas fa-user-cog"></i> Register BSNL Staff</h5>
+      </div>
+      <div class="card-body">
+
+        
+        <%- include('../../partials/messages') %>
+
+        <form action="/admin/users/register" method="POST">
+         
+          <div class="form-group">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Staff Name"
+              value="<%= typeof name !== 'undefined' ? name : '' %>" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Staff Email (e.g., staff@bsnl.in)" 
+              value="<%= typeof email !== 'undefined' ? email : '' %>" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="tel" 
+              name="mobile" 
+              placeholder="Mobile Number (10 digits)"
+              value="<%= typeof mobile !== 'undefined' ? mobile : '' %>"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department / Service</label>
+            <select name="department" class="custom-select" required>
+              <option value="">-- Select Service Department --</option>
+              <option value="Landline/Bharat Fibre">Landline/Bharat Fibre</option>
+              <option value="Wings">Wings</option>
+              <option value=" Prepaid"> Prepaid</option>
+              <option value="GSM Postpaid">GSM Postpaid</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="circle">Circle / State</label>
+            <select name="circle" id="circle" class="custom-select" required>
+              <option value="">-- Select Circle / State --</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="password" 
+              name="password" 
+              placeholder="Password"
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="password" 
+              name="confirmPassword" 
+              placeholder="Re-enter Password" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <input type="hidden" name="role" value="staff" />
+
+          <button class="btn btn-primary btn-block" type="submit">Register Staff</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

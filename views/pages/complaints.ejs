@@ -1,0 +1,90 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="container my-5">
+  <div class="card shadow-sm p-4">
+    <h4 class="text-primary mb-4 text-center">Book a Complaint</h4>
+
+    <!-- Flash Messages -->
+    <%- include('../partials/messages') %>
+
+    <form action="/complaints/add" method="POST">
+      <!-- Search By -->
+      <div class="form-group">
+        <label><strong>Search By <span class="text-danger">*</span></strong></label><br />
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="searchBy" value="PhoneNo" checked />
+          <label class="form-check-label">Phone No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="searchBy" value="AccountNo" />
+          <label class="form-check-label">Account No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="searchBy" value="TransactionID" />
+          <label class="form-check-label">Transaction ID</label>
+        </div>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label><strong>Phone No.</strong></label>
+        <input type="text" name="phoneNumber" class="form-control" placeholder="Enter 10-digit Phone No" pattern="\d{10}" />
+      </div>
+
+      <!-- Account Number -->
+      <div class="form-group">
+        <label><strong>Account No.</strong></label>
+        <input type="text" name="accountNumber" class="form-control" placeholder="Enter BSNL Account Number" />
+      </div>
+
+      <!-- Transaction ID -->
+      <div class="form-group">
+        <label><strong>Transaction ID</strong></label>
+        <input type="text" name="transactionId" class="form-control" placeholder="Enter BSNL Transaction ID" />
+      </div>
+
+      <!-- Transaction Date -->
+      <div class="form-group">
+        <label><strong>Transaction Date <span class="text-danger">*</span></strong></label>
+        <input type="date" name="transactionDate" class="form-control" required />
+      </div>
+
+      <!-- Amount -->
+      <div class="form-group">
+        <label><strong>Amount <span class="text-danger">*</span></strong></label>
+        <input type="number" name="amount" class="form-control" placeholder="Enter Transaction Amount" required min="1" />
+      </div>
+
+      <!-- Service Type -->
+      <div class="form-group">
+        <label><strong>Service Type <span class="text-danger">*</span></strong></label>
+        <select name="serviceType" class="form-control" required>
+          <option value="">Select Service</option>
+          <option value="Landline">Landline</option>
+          <option value="Broadband">Broadband</option>
+          <option value="Wings">Wings</option>
+          <option value="Postpaid">Postpaid</option>
+          <option value="Prepaid">Prepaid</option>
+          <option value="Corporate">Corporate</option>
+          <option value="Bharat Fibre">Bharat Fibre</option>
+        </select>
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label><strong>Issue Description <span class="text-danger">*</span></strong></label>
+        <textarea name="description" class="form-control" rows="4" placeholder="Describe your issue (min 10 chars)" required></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">
+          Submit Complaint
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

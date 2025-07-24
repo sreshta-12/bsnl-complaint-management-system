@@ -1,0 +1,135 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="container mt-5 mb-5">
+  <h4 class="text-center mb-4">Book Complaint</h4>
+
+  <form action="/complaints/add" method="POST" class="p-4 bg-light border rounded">
+    
+    <div class="form-group">
+      <label>Search By *</label><br />
+      <div>
+        <input type="radio" name="searchBy" value="PhoneNo" checked onchange="updateSearchField()"> Phone No
+        <input type="radio" name="searchBy" value="AccountNo" onchange="updateSearchField()"> Account No
+        <input type="radio" name="searchBy" value="TransactionID" onchange="updateSearchField()"> Transaction ID
+      </div>
+    </div>
+
+    <div class="form-group" id="searchValueContainer">
+      <label for="searchValue" id="searchLabel">Phone No. *</label>
+      <input type="text" name="searchValue" id="searchValue" class="form-control" placeholder="Enter 10 Digit Phone No" required />
+    </div>
+
+    <div class="form-group">
+      <label for="serviceType">Service Type *</label>
+      <select name="serviceType" id="serviceType" class="form-control" required onchange="toggleStateField()">
+        <option value="">-- Select Service --</option>
+        <option value="Landline/Bharat Fibre">Landline / Bharat Fibre</option>
+        <option value="Prepaid">Prepaid</option>
+        <option value="Postpaid">GSM Postpaid</option>
+        <option value="Wings">Wings</option>
+        <option value="Corporate">Corporate</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="circle"><strong>State / Circle *</strong></label>
+      <select name="circle" id="circle" class="form-control" required>
+        <option value="" disabled selected>Select your Circle</option>
+        <option value="Andaman & Nicobar">Andaman & Nicobar</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Ladakh">Ladakh</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="North East-1">North East-1</option>
+        <option value="North East-2">North East-2</option>
+        <option value="Orissa">Orissa</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="UP East">UP East</option>
+        <option value="Uttaranchal">Uttaranchal</option>
+        <option value="UP West">UP West</option>
+        <option value="Goa">Goa</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="transactionDate">Transaction Date *</label>
+      <input type="date" name="transactionDate" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount *</label>
+      <input type="number" name="amount" class="form-control" placeholder="Enter Transaction Amount" required />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Enter Complaint *</label>
+      <textarea name="description" class="form-control" rows="4" placeholder="Write your complaint here" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Submit Complaint</button>
+  </form>
+</div>
+
+<script>
+  function updateSearchField() {
+    const radios = document.getElementsByName('searchBy');
+    const label = document.getElementById('searchLabel');
+    const input = document.getElementById('searchValue');
+    const service = document.getElementById('serviceType').value;
+
+    radios.forEach(r => {
+      if (r.checked) {
+        if (r.value === 'PhoneNo') {
+          label.textContent = service === 'Wings' || service === 'Corporate' ? 'Wings No. *' : 'Phone No. *';
+          input.placeholder = label.textContent;
+        } else if (r.value === 'AccountNo') {
+          label.textContent = 'Account Number *';
+          input.placeholder = 'Enter Account Number';
+        } else {
+          label.textContent = 'Transaction ID *';
+          input.placeholder = 'Enter Transaction ID';
+        }
+      }
+    });
+  }
+
+  function toggleStateField() {
+    const service = document.getElementById('serviceType').value;
+    const label = document.getElementById('searchLabel');
+    const input = document.getElementById('searchValue');
+
+    if (['Wings', 'Corporate'].includes(service)) {
+      label.textContent = 'Wings No. *';
+      input.placeholder = 'Enter Wings Number';
+    } else if (document.querySelector('input[name="searchBy"]:checked').value === 'PhoneNo') {
+      label.textContent = 'Phone No. *';
+      input.placeholder = 'Enter 10 Digit Phone No';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    toggleStateField();
+  });
+</script>
+
+<%- include('../partials/footer') %>

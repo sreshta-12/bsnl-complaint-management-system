@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- BSNL Logo & Title -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/assets/img/bsnl-logo.jpg" alt="BSNL Logo" width="100" height="85" class="mr-3 rounded-circle shadow-sm" />
+      <span class="h5 font-weight-bold mb-0">BSNL Complaint Portal</span>
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item px-2">
+          <a class="nav-link text-white font-weight-medium" href="/">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link text-white font-weight-medium" href="/complaints">Complaints</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link text-white font-weight-medium" href="/complaints/status">Complaint Status</a>
+        </li>
+
+        <% if (user && (user.role === 'admin' || user.role === 'staff')) { %>
+          <li class="nav-item px-2">
+            <a class="nav-link text-white font-weight-medium" href="/feedback/view">Feedback</a>
+          </li>
+        <% } else if (user) { %>
+          <li class="nav-item px-2">
+            <a class="nav-link text-white font-weight-medium" href="/feedback/form">Feedback</a>
+          </li>
+        <% } %>
+
+        <% if (user) { %>
+          <li class="nav-item px-2">
+            <a class="nav-link text-white font-weight-medium" href="/users/logout">Logout</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item px-2">
+            <a class="nav-link text-white font-weight-medium" href="/users/login">Sign In</a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

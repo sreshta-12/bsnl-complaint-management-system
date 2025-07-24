@@ -1,0 +1,59 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/messages') %>
+
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white text-center">
+          <h4 class="mb-0">🔐 Login to BSNL Portal</h4>
+        </div>
+
+        <div class="card-body">
+          <form action="/users/login" method="POST">
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input required type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input required type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+
+            <!-- Captcha -->
+            <div class="form-group">
+              <label for="captcha">Captcha</label><br>
+              <img 
+                src="/users/captcha" 
+                alt="Captcha Image" 
+                class="mb-2 border rounded" 
+                style="cursor: pointer;" 
+                onclick="this.src='/users/captcha?' + Math.random()" 
+              />
+              <input 
+                type="text" 
+                name="captcha" 
+                class="form-control mt-2" 
+                placeholder="Enter captcha" 
+                required
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success btn-block">Login</button>
+          </form>
+        </div>
+
+        <div class="card-footer text-center">
+          Don’t have an account? <a href="/users/signup">Create one here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

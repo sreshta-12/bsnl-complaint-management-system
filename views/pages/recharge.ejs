@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<section class="container my-5">
+  <h2 class="text-primary mb-4">💳 Home Prepaid - Recharge</h2>
+  <form action="/recharge/process" method="POST" class="bg-light p-4 border rounded">
+    <h5 class="mb-4">Mobile Details</h5>
+
+    <div class="form-group">
+      <label for="mobileNumber">Mobile No *</label>
+      <input type="text" name="mobileNumber" id="mobileNumber" class="form-control" placeholder="Enter 10 digit mobile number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="circle">State / Circle *</label>
+      <select class="form-control" name="circle" required>
+        <option value="">Select Circle</option>
+        <option>Andhra Pradesh</option>
+        <option>Telangana</option>
+        <option>Tamil Nadu</option>
+        <option>Karnataka</option>
+        <option>Maharashtra</option>
+        <option>Kerala</option>
+        <option>Delhi</option>
+        <option>Punjab</option>
+        <!-- Add all other BSNL circles -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="captcha">Code *</label>
+      <div class="d-flex align-items-center">
+        <input type="text" name="captcha" id="captcha" class="form-control mr-3" placeholder="Enter the above code" required>
+        <img src="/captcha" alt="CAPTCHA" style="height: 38px;">
+      </div>
+    </div>
+
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="rememberInfo" name="rememberInfo">
+      <label class="form-check-label" for="rememberInfo">Would you like to remember above information?</label>
+    </div>
+
+    <button type="submit" class="btn btn-success btn-block">Recharge</button>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>

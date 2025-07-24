@@ -1,0 +1,1397 @@
+[
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.andamanandnicobar@bsnl.in",
+    "mobile": "9000000000",
+    "password": "$2b$12$Om8LbO2MvLt3iWKsymaIKOnzeQC1r6fnxMiDFkGlxoT25.m8aO52.",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Andaman & Nicobar"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.andamanandnicobar@bsnl.in",
+    "mobile": "9000000001",
+    "password": "$2b$12$cws8lg.L8zcvEqSM7.1/BewetJvhuCjPfFf.p0s590K.UqckG5c.O",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Andaman & Nicobar"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.andamanandnicobar@bsnl.in",
+    "mobile": "9000000002",
+    "password": "$2b$12$bHeCwr.2kI./9K7esAtZBuuKEUkQ2adMCpWoUT2f9QPDeFsy.r0vq",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Andaman & Nicobar"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.andamanandnicobar@bsnl.in",
+    "mobile": "9000000003",
+    "password": "$2b$12$xuBNGRS2MxjJvTQ3uX14FOS5tsQHgl17SbZyCxAy/eRo5Tm4cBHFO",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Andaman & Nicobar"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.andamanandnicobar@bsnl.in",
+    "mobile": "9000000004",
+    "password": "$2b$12$RqaBWc0753c7ZgSHWqXvNOspTVqAA3x6QBW3cXGRVRyAr6cB96u0q",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Andaman & Nicobar"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.andhrapradesh@bsnl.in",
+    "mobile": "9000000005",
+    "password": "$2b$12$GtPt4avO0368y7akfLGe9OoX9mRzr1SJ4UZ9JTIqTNamDzGEMJMJK",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Andhra Pradesh"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.andhrapradesh@bsnl.in",
+    "mobile": "9000000006",
+    "password": "$2b$12$jlu513mf6C6Y1vpdsIaeS.lU1aS4CCt68X8HOpugNx4XzlwgAeUi2",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Andhra Pradesh"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.andhrapradesh@bsnl.in",
+    "mobile": "9000000007",
+    "password": "$2b$12$FVKJtNj.uudQjh/LE6PhQOqF.pbN.KmKfUXfMRzeKjlOInQUOvci2",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Andhra Pradesh"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.andhrapradesh@bsnl.in",
+    "mobile": "9000000008",
+    "password": "$2b$12$BObV9EMaczWxhm/5WfPTQOYjlmCSqbQkpsxPCSkSt7j.Ecitehy1O",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Andhra Pradesh"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.andhrapradesh@bsnl.in",
+    "mobile": "9000000009",
+    "password": "$2b$12$uzcj3ZeYHIqtTvbueWJrp.mCxICtPpfF1zSFivV81abX6zYHzxpUW",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Andhra Pradesh"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.assam@bsnl.in",
+    "mobile": "9000000010",
+    "password": "$2b$12$rG0ajWQCgKjN/eF0LXNHxu9jQWHPlVO6GXnfXCKCtLc/CR/8D/o0q",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Assam"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.assam@bsnl.in",
+    "mobile": "9000000011",
+    "password": "$2b$12$0sIoDzYR3UxyXq6/ljXnuOTnW4W6B0PDxrqerk8Ln.TEwcDAkypKS",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Assam"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.assam@bsnl.in",
+    "mobile": "9000000012",
+    "password": "$2b$12$KjQxMWUAsqsqEVOeMQ1ejeS3H38kJ0fLpSt1RLpXE0qgPeeX8URia",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Assam"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.assam@bsnl.in",
+    "mobile": "9000000013",
+    "password": "$2b$12$IrrMjE2t2gpNMP4O4YnCbe29bzhMolyAL..iy6wTWEyg5lQ0gkpf2",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Assam"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.assam@bsnl.in",
+    "mobile": "9000000014",
+    "password": "$2b$12$6WIrKN1p7grsgAhVMMfP.uxzddELIKSIodcwUefvHjxYKgGVI1zQ6",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Assam"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.bihar@bsnl.in",
+    "mobile": "9000000015",
+    "password": "$2b$12$2xoXuNjZYrfsOtlLpyYENea543MGjchtI34C5W0RxPBC.E39EiMCm",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Bihar"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.bihar@bsnl.in",
+    "mobile": "9000000016",
+    "password": "$2b$12$AtmZr4nqylqqD4MPDE6xNO3QkIhicUmJ3pnrD1aqbfl.Lq3ujGFOG",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Bihar"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.bihar@bsnl.in",
+    "mobile": "9000000017",
+    "password": "$2b$12$maaNeM7TCMjRwhY7UMmzHu7FH6wtBVUvZ5wOa6lLND7kbxSd4bjAW",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Bihar"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.bihar@bsnl.in",
+    "mobile": "9000000018",
+    "password": "$2b$12$sXGv85ajNUzPpHU4GCIE0.t0dCa5gS2gXImnAHDLA9cx5udWhGRRm",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Bihar"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.bihar@bsnl.in",
+    "mobile": "9000000019",
+    "password": "$2b$12$CQ5MqCRfDSzBO2gAZuBUreyOtCO52vpM9ggwwQ9nf1IY12LFvrnFO",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Bihar"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.chattisgarh@bsnl.in",
+    "mobile": "9000000020",
+    "password": "$2b$12$XqmyxhgHtuQFjNqGCyZmg.wpJ1Quc75pi3JlxsCxnOEk9ZhHwllAK",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Chattisgarh"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.chattisgarh@bsnl.in",
+    "mobile": "9000000021",
+    "password": "$2b$12$7mQPyHgMJIt0psHiQqozBO0RtX2AQMguf/cDkvS50tN8WDqvsFDPG",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Chattisgarh"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.chattisgarh@bsnl.in",
+    "mobile": "9000000022",
+    "password": "$2b$12$ywjfkDDSkm7IcCK6eOmRNuQd/Rxu77aCbc8zds863WfKzP7QSz9xG",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Chattisgarh"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.chattisgarh@bsnl.in",
+    "mobile": "9000000023",
+    "password": "$2b$12$8wqWLPQh655YZTRumX1fmejCvRdMjOE975zParE1RbkrjyiGNwgGy",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Chattisgarh"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.chattisgarh@bsnl.in",
+    "mobile": "9000000024",
+    "password": "$2b$12$OYyhbFkQGHaKHDvAQo0sJuqg0ObUOn133OMlhzdenY.BTffuXGMMS",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Chattisgarh"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.chennai@bsnl.in",
+    "mobile": "9000000025",
+    "password": "$2b$12$mrIThySmizG9OTq.8un1AOQtb6mjASI/NaIEI11h.J7iU0E22q41.",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Chennai"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.chennai@bsnl.in",
+    "mobile": "9000000026",
+    "password": "$2b$12$qAUjfnUl7Wy/1OV8sc1svOuXd3qaXArY1AUGf8h10fyWI.ROsb.du",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Chennai"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.chennai@bsnl.in",
+    "mobile": "9000000027",
+    "password": "$2b$12$J9fpcWAW1Igl8l9Y2oV5AO4u6DcLn.Cc9GwjhJCyd48Rixu0cluii",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Chennai"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.chennai@bsnl.in",
+    "mobile": "9000000028",
+    "password": "$2b$12$hdJB61Ue82BJdbOMkn0Ln.yKhtSmkMpZVgzdiE4lPkXHapIAsZ.Ai",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Chennai"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.chennai@bsnl.in",
+    "mobile": "9000000029",
+    "password": "$2b$12$m8mzCMpjZ64W0X3pECt2dONQGBV4brmBDHWG8Sls29R2yd6ixOHKe",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Chennai"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.gujarat@bsnl.in",
+    "mobile": "9000000030",
+    "password": "$2b$12$x6MtM7a1ylZ51QV3VA/IrewyNPboUozHWRaPmAkuBj1NnFwDlsrFS",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Gujarat"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.gujarat@bsnl.in",
+    "mobile": "9000000031",
+    "password": "$2b$12$/6BpZZHK9sEmOMEKxV6YH.U1DJ5FCFOp6y.YdqDHlnuybJRcoBBG.",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Gujarat"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.gujarat@bsnl.in",
+    "mobile": "9000000032",
+    "password": "$2b$12$0dWngYdptpZ03h095lHaCuyKB2ylI8eHM6EV2xwwcrhOHSETGJbru",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Gujarat"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.gujarat@bsnl.in",
+    "mobile": "9000000033",
+    "password": "$2b$12$TkLQyoTw20qf3LggYEvFuO47HYKoEcmfPFxFZuav9nlUDDEzURlSO",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Gujarat"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.gujarat@bsnl.in",
+    "mobile": "9000000034",
+    "password": "$2b$12$Ydt8rOyqmIin103KtAkuPustvzGenXd772bZikgW6riL9UeTSGsSe",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Gujarat"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.haryana@bsnl.in",
+    "mobile": "9000000035",
+    "password": "$2b$12$.RMEZ1PfspVfRBs2ZBaV8u0vkLfEl7tcIrfQJ352r50PHFQHGzL3S",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Haryana"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.haryana@bsnl.in",
+    "mobile": "9000000036",
+    "password": "$2b$12$X7KpJTxnWnn0l.vH0D.XP.H6sQzi6..BOrqrGkqjv0KS0sCWEJ.Qi",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Haryana"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.haryana@bsnl.in",
+    "mobile": "9000000037",
+    "password": "$2b$12$NkVxFES6ufwIl4FmwClhSeOon/oqK88TJNVr3jJSAaSyNwxKgwWkW",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Haryana"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.haryana@bsnl.in",
+    "mobile": "9000000038",
+    "password": "$2b$12$nVvDD6mAULMnSIaaF.8LnesXhsNVzpqcbnTkA0YEnQhS79sgOC6xC",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Haryana"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.haryana@bsnl.in",
+    "mobile": "9000000039",
+    "password": "$2b$12$iszkUTEIW853hoJbcc3kvOmKD4M5u7TUWiOkjqLbE7KEVQaE9jxFS",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Haryana"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.himachalpradesh@bsnl.in",
+    "mobile": "9000000040",
+    "password": "$2b$12$D7Dvrqd3.w/WyS4IC60oWu8tvjK4bJHLrD2ldAZIBPGjuJ1KNowKu",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Himachal Pradesh"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.himachalpradesh@bsnl.in",
+    "mobile": "9000000041",
+    "password": "$2b$12$CsCnfNtCX6ZuUG8AUBhU5uZPCuIk01avRO5YljP5dksEoKTviFPfq",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Himachal Pradesh"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.himachalpradesh@bsnl.in",
+    "mobile": "9000000042",
+    "password": "$2b$12$UJpfqOEXbvYQKKjRojoQ1OGcVH2ST.CcRelpk20JqaS7T181/F5wq",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Himachal Pradesh"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.himachalpradesh@bsnl.in",
+    "mobile": "9000000043",
+    "password": "$2b$12$ls40OXCugy1ttsHnFaUSp.y5sqs1MtAShE2Mh/mjKlFYSfAaZKpfe",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Himachal Pradesh"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.himachalpradesh@bsnl.in",
+    "mobile": "9000000044",
+    "password": "$2b$12$dOeiLT5awIhaHgvSKOe6.ufXS7917KHKsxBhaQKkl6hiHnWPpqQV.",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Himachal Pradesh"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.jharkhand@bsnl.in",
+    "mobile": "9000000045",
+    "password": "$2b$12$54.q3D0ltPm1P5nTuiKug.53WLyUXudIy91Wqm1Qzc9AQw5AJLMJ.",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Jharkhand"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.jharkhand@bsnl.in",
+    "mobile": "9000000046",
+    "password": "$2b$12$u06CClC4dfF3SL0IUHPjBe3l99dY7ojipUH2pxWgXSz83rXaliWxm",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Jharkhand"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.jharkhand@bsnl.in",
+    "mobile": "9000000047",
+    "password": "$2b$12$OYlkZaZhALW0Pp2Ki95.g.L.jMtJLXiDCZE9HXBBpVcUHRSVDBmeC",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Jharkhand"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.jharkhand@bsnl.in",
+    "mobile": "9000000048",
+    "password": "$2b$12$LbXWsrwkamvQid1uriLHleE0MDbvX2CP2z1mVyond2gQcybsRrY3a",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Jharkhand"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.jharkhand@bsnl.in",
+    "mobile": "9000000049",
+    "password": "$2b$12$VJ2iiy6vyDB53xby6jELje9CBf/dSoq7lFpsAFlqG0q6dgrWmWBL6",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Jharkhand"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.jammuandkashmir@bsnl.in",
+    "mobile": "9000000050",
+    "password": "$2b$12$I07/K92Na/u0KgIQtaSp1uxkx2EKHJNLIaiJ74UMf/nRNGR7PVyFO",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Jammu and Kashmir"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.jammuandkashmir@bsnl.in",
+    "mobile": "9000000051",
+    "password": "$2b$12$.d8B88s51h1o16.pBARB5.9fWoBBusXDjGZVoY6631fWJQiHkgrda",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Jammu and Kashmir"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.jammuandkashmir@bsnl.in",
+    "mobile": "9000000052",
+    "password": "$2b$12$8oCuVzOxCucQY4HyhZSbO.I8Ebr8p/m76VCponUh2xdkKO6bwomEu",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Jammu and Kashmir"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.jammuandkashmir@bsnl.in",
+    "mobile": "9000000053",
+    "password": "$2b$12$zGT1y/g123Zmr0lbOtLvPu5sZFzLDjDNIb5sCreTUi7anPeJ4GxMW",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Jammu and Kashmir"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.jammuandkashmir@bsnl.in",
+    "mobile": "9000000054",
+    "password": "$2b$12$qqfj6sOAsiI2xday2swaoeFqf2BaTDRCPmEUiB1Rs.2j23Drhlh6.",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Jammu and Kashmir"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.kerala@bsnl.in",
+    "mobile": "9000000055",
+    "password": "$2b$12$H2v1JhuuzbUR3GzD4wu4C.xPOCr8KqdlP1TfVT7GOCzyzKAZKsY9e",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Kerala"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.kerala@bsnl.in",
+    "mobile": "9000000056",
+    "password": "$2b$12$N7aIwZCi16de7ZL30.Pdl.c9J6EkH/ct0Jbkad0wtrEPz0DlhvIs6",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Kerala"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.kerala@bsnl.in",
+    "mobile": "9000000057",
+    "password": "$2b$12$ZMRLQIA8KEKTKnGXl/Zzd.tTlqEOkzrN7L7lOzcb9kvsnmpMnZs1S",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Kerala"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.kerala@bsnl.in",
+    "mobile": "9000000058",
+    "password": "$2b$12$gcbnLMcTzPDnfGoVqkXA7e1odKgjxQKEHl0fMtfKBI1Msf8ulMhMm",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Kerala"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.kerala@bsnl.in",
+    "mobile": "9000000059",
+    "password": "$2b$12$UaY2qCtoPK7bOpGfQWVk1.YZRq/FTB.FPgXnyDDHJi7pAH0JypILC",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Kerala"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.kolkata@bsnl.in",
+    "mobile": "9000000060",
+    "password": "$2b$12$N/63p6NAx3QqRHfHNz3F1et18ENb5wNchiJrlXPJCfH34fkSwe2vO",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Kolkata"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.kolkata@bsnl.in",
+    "mobile": "9000000061",
+    "password": "$2b$12$0oQyJRKxt/tjZ9LAa.aXReLGPVDsxk6g2jKovvvDnfYPmZrwKMPzu",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Kolkata"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.kolkata@bsnl.in",
+    "mobile": "9000000062",
+    "password": "$2b$12$anE8qabE0PvDyfoX1qDLqemm1nv57CeDvgTnS1KzSeYqsR5ETiXEC",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Kolkata"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.kolkata@bsnl.in",
+    "mobile": "9000000063",
+    "password": "$2b$12$Y8aau5EoeNADCalueqVrjufC6Kg1GYOBAmRZXfaW.hOBrfSSbQ9tK",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Kolkata"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.kolkata@bsnl.in",
+    "mobile": "9000000064",
+    "password": "$2b$12$t6MWeCq7UNILp7eCWfKt4OTwnr7ZKlThdrdRaIAJ.LI2oB0ySaFfW",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Kolkata"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.karnataka@bsnl.in",
+    "mobile": "9000000065",
+    "password": "$2b$12$0G96tL9/oRH8nnjD/nFQjuY/x2mVT8vAOzV7MLWENuYxur7eDuAMe",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Karnataka"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.karnataka@bsnl.in",
+    "mobile": "9000000066",
+    "password": "$2b$12$m1iV7xCmKIMFlw9nWQfiDeX5etjVw9HzVbKy6W3ggj3kNtOVOKNJO",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Karnataka"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.karnataka@bsnl.in",
+    "mobile": "9000000067",
+    "password": "$2b$12$RIfnkZEX3K3kBZpZ0Tl.0O2x4yKmr45EI/gpPulWSGcF1KceCWY5y",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Karnataka"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.karnataka@bsnl.in",
+    "mobile": "9000000068",
+    "password": "$2b$12$1rZc1ncoEh2.04RTtlsAsOodaDAmRRNQ8ywVLcVqsa9PECue9lW.e",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Karnataka"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.karnataka@bsnl.in",
+    "mobile": "9000000069",
+    "password": "$2b$12$suJXyYNdv9wmjCgfDagVReKs/4In9b.SKVejYR9rGbkQxNUS6Hxuu",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Karnataka"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.ladakh@bsnl.in",
+    "mobile": "9000000070",
+    "password": "$2b$12$wk5dyivdF8pGNZl3IFdHQ.202YwYWh4c2Yv99NKTNENRMkjaHHHGW",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Ladakh"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.ladakh@bsnl.in",
+    "mobile": "9000000071",
+    "password": "$2b$12$fv0LTOqFc5ksWHcCmylvt.NSWrFSy4BmoQAo8dmK8Vl1gCV0IZYcO",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Ladakh"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.ladakh@bsnl.in",
+    "mobile": "9000000072",
+    "password": "$2b$12$NbXWMDSzZ0Qvmgi.5jdpseqslyVi1rsoWrRqQfGwtRL0k0.C7x72C",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Ladakh"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.ladakh@bsnl.in",
+    "mobile": "9000000073",
+    "password": "$2b$12$AtLy809HGqwK.u76J1mwjerJ5TbsmiRrD91B5N5ptAjgHtH3phQbq",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Ladakh"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.ladakh@bsnl.in",
+    "mobile": "9000000074",
+    "password": "$2b$12$QIP8V7u5ShK8uPgMTh9GZeTNAPySG1fhhJkpkcZb.8Ly6OwTvRo0i",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Ladakh"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.mumbai@bsnl.in",
+    "mobile": "9000000075",
+    "password": "$2b$12$IAuAF/bDjx910FpopGgAT.fyEGJKAinTHYnKwoMJVbhw1YnS/8mWS",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Mumbai"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.mumbai@bsnl.in",
+    "mobile": "9000000076",
+    "password": "$2b$12$g3rH6lGszFmSmQ6SmIYfZ.EXaoJ6lqm/oqN7eaUbm4n5xX8V1tREK",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Mumbai"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.mumbai@bsnl.in",
+    "mobile": "9000000077",
+    "password": "$2b$12$fa1vj5LkRSmM1F856Epj2egLS3GSqvelHL1J390RZWZcrpq3dX5zm",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Mumbai"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.mumbai@bsnl.in",
+    "mobile": "9000000078",
+    "password": "$2b$12$D2gKYIbpbtawGpxZDQPiEeYl0rsk4nwwjv6Jmx8PDGEUghFUjsth.",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Mumbai"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.mumbai@bsnl.in",
+    "mobile": "9000000079",
+    "password": "$2b$12$86DoMGOjtl/NlBa8y7lxfeuZsI3SGJmdEY7JySTYNvdoJa1VfOpXe",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Mumbai"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.maharashtra@bsnl.in",
+    "mobile": "9000000080",
+    "password": "$2b$12$1pjvQ61KUpMXtCXpzUHNo.I5.ZOlBswSLej2xmyTSCD.hjIdySZjW",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Maharashtra"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.maharashtra@bsnl.in",
+    "mobile": "9000000081",
+    "password": "$2b$12$5fSBTfJoeYBz5kEu/CPS4.YAehk03k/VTlyY1A9iEIlYhrlEbL8AW",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Maharashtra"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.maharashtra@bsnl.in",
+    "mobile": "9000000082",
+    "password": "$2b$12$vFa8hb.1UulsnMsMd68brOFqfPn/NU1farmsL/OFpZwRNFr.TIJC2",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Maharashtra"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.maharashtra@bsnl.in",
+    "mobile": "9000000083",
+    "password": "$2b$12$74alQ5Qzzw052O9v3fVaD.Os7aT4JUctuLuTxkkjOpQjvuSOwO9ue",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Maharashtra"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.maharashtra@bsnl.in",
+    "mobile": "9000000084",
+    "password": "$2b$12$i.FCJebxHuUTRp2WDfXR6eVVV40E3itltRxzB.zYN92NJgzBeAXnW",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Maharashtra"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.madhyapradesh@bsnl.in",
+    "mobile": "9000000085",
+    "password": "$2b$12$uYChx.LCdtblKzjA72ik1uTC.fZ2F1WCBXg1v5MXBRq4Fm7WNAVSa",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Madhya Pradesh"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.madhyapradesh@bsnl.in",
+    "mobile": "9000000086",
+    "password": "$2b$12$4IUQjnNMLF8RSB9GgUOOCuYPHQ9eE.UBl4Ptr1wAKdj5q0X/0sT1m",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Madhya Pradesh"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.madhyapradesh@bsnl.in",
+    "mobile": "9000000087",
+    "password": "$2b$12$Di47011RwhwN3v2zYWgBfOsx8OjbrVDrUcPYOJP0eflZ/S3aIl5Hq",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Madhya Pradesh"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.madhyapradesh@bsnl.in",
+    "mobile": "9000000088",
+    "password": "$2b$12$evlCtCg90gS2wBXoqDMJ4O6dvaaLmQb5GyuP1kNBNVdeAcpdue9we",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Madhya Pradesh"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.madhyapradesh@bsnl.in",
+    "mobile": "9000000089",
+    "password": "$2b$12$zQyPHexLUP1JXXGMJl9zn.UAhqTrvCHCYt.Xos0VVEHglWxk0sfT2",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Madhya Pradesh"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.northeastone@bsnl.in",
+    "mobile": "9000000090",
+    "password": "$2b$12$Ja1J5pCAhv3BEveVlNOIfOsrsZrj16w3GDVvEcQpdI45KxyGXliy.",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "North East One"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.northeastone@bsnl.in",
+    "mobile": "9000000091",
+    "password": "$2b$12$.wjOoZbYxk7w436i5F5ny.ZWYlekfHxqCTDfEwJPuvCEkSA4FMtRi",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "North East One"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.northeastone@bsnl.in",
+    "mobile": "9000000092",
+    "password": "$2b$12$oFkGXiRPeULDF/zrk0grkO3GpLo1GdYPlspk1lLDEJ87dlOlTj9qe",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "North East One"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.northeastone@bsnl.in",
+    "mobile": "9000000093",
+    "password": "$2b$12$Icubx5zvGgA4Yu94GY4aZORJ1fnOEVGTEjUF2VqMDvUEdXWKBDK4a",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "North East One"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.northeastone@bsnl.in",
+    "mobile": "9000000094",
+    "password": "$2b$12$EPIxadtgNuP7upqq.Nq9m.cNWN9pZJdl7Sw/J.Nt5DdhtOgVJPt6a",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "North East One"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.northeasttwo@bsnl.in",
+    "mobile": "9000000095",
+    "password": "$2b$12$rn0.4sHa1oTvXcGP9nLQhef0v1QkqgzsBIv530p/1FG/UFmPHxEGC",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "North East Two"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.northeasttwo@bsnl.in",
+    "mobile": "9000000096",
+    "password": "$2b$12$mpZoIr3gwk7wkynrwOyNOeCsLdgAbdtRM3fXn5dJtFwAI3vy4u1xG",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "North East Two"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.northeasttwo@bsnl.in",
+    "mobile": "9000000097",
+    "password": "$2b$12$2TBHjZyuLPNr5HyTKaG2AObkOXTPPofvbjm14v6RhcElorPREBuwC",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "North East Two"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.northeasttwo@bsnl.in",
+    "mobile": "9000000098",
+    "password": "$2b$12$j/9iHwkI3Rv9rM9IrWc8qu5.SyZ0CKLNrLBiU6Tr3G3oEI1GgjTnu",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "North East Two"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.northeasttwo@bsnl.in",
+    "mobile": "9000000099",
+    "password": "$2b$12$CBCg5RGS.BLkB.th2.OUpe6B5rrdUdZ6.d0YE9OAwvS05QXnrOq7i",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "North East Two"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.odisha@bsnl.in",
+    "mobile": "9000000100",
+    "password": "$2b$12$14bjd8xJDrl4wcuiXbXA4ea61g11VY3cKhqGZoumEzMEEnLb2De.y",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Odisha"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.odisha@bsnl.in",
+    "mobile": "9000000101",
+    "password": "$2b$12$qp7OWVSp.pmkX5QjBtlGZuzvZ3hrjrcEyRe5W73e5wL7HfU/0sAgO",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Odisha"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.odisha@bsnl.in",
+    "mobile": "9000000102",
+    "password": "$2b$12$.N54LDSKK/5ePRBtHTk.jOZ.kGh8xEg3hLLGsbORghPqCQ0Cm9lVe",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Odisha"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.odisha@bsnl.in",
+    "mobile": "9000000103",
+    "password": "$2b$12$7ojnrOrycn2eznMXms5euOxgmk7FZvMWctFXk6qYejscAF7nJOI5W",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Odisha"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.odisha@bsnl.in",
+    "mobile": "9000000104",
+    "password": "$2b$12$721qb6HN1PUOvVMOYikh4OdDtJ.wG75dDm6SFYtPTuPcx3dB446x6",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Odisha"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.punjab@bsnl.in",
+    "mobile": "9000000105",
+    "password": "$2b$12$mdH5NgcVOCt4GwvIZGxevOEfLpgy21Z.Uaa7v5Rp70d5MpNg/RnWC",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Punjab"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.punjab@bsnl.in",
+    "mobile": "9000000106",
+    "password": "$2b$12$E7fhlQ5lZO3sHPhU8/Vvp.AQNTSimKFQDZdEi.I0rolLqeS/Mt5GS",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Punjab"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.punjab@bsnl.in",
+    "mobile": "9000000107",
+    "password": "$2b$12$aKsCQxWtul/9ueJ6fjfWR./B7wKJSbZ/CvwRqynw38a5YpiDeUaHe",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Punjab"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.punjab@bsnl.in",
+    "mobile": "9000000108",
+    "password": "$2b$12$.dgqZ.tmvJRO8CoH0jcY3.6WSbM16klvrVdhAXYAsoodNPA9RsfyO",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Punjab"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.punjab@bsnl.in",
+    "mobile": "9000000109",
+    "password": "$2b$12$oVU5Ewyjqk4tz9f6g9S7pe1p6V6G8d5E5Yv4iiZWGpfl5GraLA31G",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Punjab"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.rajasthan@bsnl.in",
+    "mobile": "9000000110",
+    "password": "$2b$12$09.mk5qd51D1jv4rPIfA2en7UgfteLS5/7tEW6S3uKsy4BJrN8//O",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Rajasthan"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.rajasthan@bsnl.in",
+    "mobile": "9000000111",
+    "password": "$2b$12$oGjqHwYjdO.U4chEZVnQq.ffPqpUXRkImdkfeL5VYZi0mxnSn7hQi",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Rajasthan"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.rajasthan@bsnl.in",
+    "mobile": "9000000112",
+    "password": "$2b$12$ZjX2yemMmfI1LsRxFrJVOubjYKO23v.jG6hcuCyvBYeNVzKIcijQ2",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Rajasthan"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.rajasthan@bsnl.in",
+    "mobile": "9000000113",
+    "password": "$2b$12$NrzewlNq6oalIRUWHHWWHeTSxtQXkmI9dE9iRFICDWj4BRonXtC9m",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Rajasthan"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.rajasthan@bsnl.in",
+    "mobile": "9000000114",
+    "password": "$2b$12$qCjD2eLGmS2qf6Q/ak0wH.R3zvHzsqlJN11D7WO54BzTEzhpr0Lym",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Rajasthan"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.sikkim@bsnl.in",
+    "mobile": "9000000115",
+    "password": "$2b$12$4WBW81FklxAMUBcAN.mVjuhzsRPlGIsUBjAptir533w8/8R5RMRSe",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Sikkim"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.sikkim@bsnl.in",
+    "mobile": "9000000116",
+    "password": "$2b$12$e/dofemwAbu1I0uGp5UReusgdNt7Ncl0cZb8B9UQDfHNQFgryHs6O",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Sikkim"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.sikkim@bsnl.in",
+    "mobile": "9000000117",
+    "password": "$2b$12$dqtowTA6SOt0I6F7to6.L.QorJoH3gjH6ztMzCLlmWwTIJBK1uTjS",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Sikkim"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.sikkim@bsnl.in",
+    "mobile": "9000000118",
+    "password": "$2b$12$gopmsRQO8R219u6ltIJTK.S9czeFutEfdHTKs4szbYvyLMNmf3Bim",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Sikkim"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.sikkim@bsnl.in",
+    "mobile": "9000000119",
+    "password": "$2b$12$3JrL6gzbxdLTWHR4597pVecn0uLQ93.mW./Q1BbORQsZ3coIxVIda",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Sikkim"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.tamilnadu@bsnl.in",
+    "mobile": "9000000120",
+    "password": "$2b$12$qZXRYqoO3yicDHcCS6DsJO5xK8v9vY2aJ0K4kQ64lcB9.j.OESWGa",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Tamil Nadu"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.tamilnadu@bsnl.in",
+    "mobile": "9000000121",
+    "password": "$2b$12$qPsFhM/WJSZPvtRO4w70gOtYNExtcpf79yMrtgefGJPKA3y1f0xvS",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Tamil Nadu"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.tamilnadu@bsnl.in",
+    "mobile": "9000000122",
+    "password": "$2b$12$Bm8.vp2pxEuXD7L5E5wyfuiW1nLg1vKfDd4HgrV7qw6KcGEKsNuhy",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Tamil Nadu"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.tamilnadu@bsnl.in",
+    "mobile": "9000000123",
+    "password": "$2b$12$4q6BrpFOVRFu1ei7K2wHd.lqrOF/RAxtWuAOKJ58DYzqT.xbEJKUK",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Tamil Nadu"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.tamilnadu@bsnl.in",
+    "mobile": "9000000124",
+    "password": "$2b$12$g4fy1Pofdgaiee56QlF8COMxhpSmpNy0sts7iTK4IRr8zNERUDWfu",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Tamil Nadu"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.telangana@bsnl.in",
+    "mobile": "9000000125",
+    "password": "$2b$12$G/eKdLO7D7v.7zZLyZZEROidbfVVWwQCBtD9YU7tBvLt.z9iUjARK",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Telangana"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.telangana@bsnl.in",
+    "mobile": "9000000126",
+    "password": "$2b$12$Wxy6QS6LaLXlTAwqmTgYGeVY5TSyC/rt3.j9TlddIuL.7u885ZdcG",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Telangana"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.telangana@bsnl.in",
+    "mobile": "9000000127",
+    "password": "$2b$12$23gsuq8Tm.Sb/dr7NEoBPuZWMwtnzn7/HETjbfSo2qY6psZlAe4fO",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Telangana"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.telangana@bsnl.in",
+    "mobile": "9000000128",
+    "password": "$2b$12$WFfBA7KVP5LaedROl8.QFus3iAcLDcMfMVST6GZCqV9sGDgz1q88O",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Telangana"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.telangana@bsnl.in",
+    "mobile": "9000000129",
+    "password": "$2b$12$ftuoxs2SRBkdw21fPhzM/uQAEUGj.7E/uAP9ykFy/DxuEN12hJvAu",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Telangana"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.upeast@bsnl.in",
+    "mobile": "9000000130",
+    "password": "$2b$12$jNNQ.R5/9SKSC2Xb5e/nruatxaqlpIOf64TWHnuN7YSnLFpJ0Xw46",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "UP East"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.upeast@bsnl.in",
+    "mobile": "9000000131",
+    "password": "$2b$12$N2lx8ltxX8uDlD0S753T.eFxfPeyrP.HcBg/4DFlYwloKutAe8Pgm",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "UP East"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.upeast@bsnl.in",
+    "mobile": "9000000132",
+    "password": "$2b$12$KEqn.RKgcVVkj0JIxO3Ycu3K/pwRh2xi5SRFjNQFOAbl2pV04AkC.",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "UP East"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.upeast@bsnl.in",
+    "mobile": "9000000133",
+    "password": "$2b$12$Qd2BOtkBsnAkL/fFcnvK.umq9hc9ZzVrVqabo5rA/UXFUTM4Mpot.",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "UP East"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.upeast@bsnl.in",
+    "mobile": "9000000134",
+    "password": "$2b$12$.Par8BgzEg9mUsBWeYPlyuvzzXNAaJQZn.tdjZ.EQsC9BlDMMqiiq",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "UP East"
+  },
+  {
+    "name": "Divya",
+    "email": "divya.landlinebharatfibre.uttaranchal@bsnl.in",
+    "mobile": "9000000135",
+    "password": "$2b$12$8q61dMcA7kKPZ0SkbUgBp.vXTnHEd4rRfN8Rio/w9kmVtzR8XNTD2",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Uttaranchal"
+  },
+  {
+    "name": "Nikhil",
+    "email": "nikhil.prepaid.uttaranchal@bsnl.in",
+    "mobile": "9000000136",
+    "password": "$2b$12$9oYScUZXcimSMdW/RzgYDOor4ok7jCOGAVFWgl9Cnj.0MDRl64OLS",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Uttaranchal"
+  },
+  {
+    "name": "Meena",
+    "email": "meena.gsmpostpaid.uttaranchal@bsnl.in",
+    "mobile": "9000000137",
+    "password": "$2b$12$mDvUBpTuvlQfjnDcsu1Qg.7nwbAfoSyCHEbVFLc9xLRnOuMBS3/aa",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Uttaranchal"
+  },
+  {
+    "name": "Rohit",
+    "email": "rohit.wings.uttaranchal@bsnl.in",
+    "mobile": "9000000138",
+    "password": "$2b$12$ZeKnGkkfdvCArns8nTxuo.ZYhF47twSyrQzjVa66zOEnnWsgIanye",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Uttaranchal"
+  },
+  {
+    "name": "Swati",
+    "email": "swati.corporate.uttaranchal@bsnl.in",
+    "mobile": "9000000139",
+    "password": "$2b$12$VFk3hveOK59aWfewmvHqfe2cYFBN/cyjT296pDjD.Zrz4J4EF799y",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Uttaranchal"
+  },
+  {
+    "name": "Rajesh",
+    "email": "rajesh.landlinebharatfibre.upwest@bsnl.in",
+    "mobile": "9000000140",
+    "password": "$2b$12$2xsmm10alhS6sdyfsZqPT.uQfm3lVqai3YS/fvV.H33JRUoXRtzbW",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "UP West"
+  },
+  {
+    "name": "Amit",
+    "email": "amit.prepaid.upwest@bsnl.in",
+    "mobile": "9000000141",
+    "password": "$2b$12$UrhYehI8a7nfkUWsd4TN.eLJ5YAKO7EY5AMbQplqTkMOPLchNt6HK",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "UP West"
+  },
+  {
+    "name": "Neha",
+    "email": "neha.gsmpostpaid.upwest@bsnl.in",
+    "mobile": "9000000142",
+    "password": "$2b$12$bB3gomcwM5MvgkkZ3isj.uOhhz2u8riqb.eZGL0Zuq6zJE/3lEoqO",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "UP West"
+  },
+  {
+    "name": "Priya",
+    "email": "priya.wings.upwest@bsnl.in",
+    "mobile": "9000000143",
+    "password": "$2b$12$XpWX6YQm540IJsU8.vTA.Ozcc.A4wHFwxAIL7yTxhjDZleipw942m",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "UP West"
+  },
+  {
+    "name": "Ravi",
+    "email": "ravi.corporate.upwest@bsnl.in",
+    "mobile": "9000000144",
+    "password": "$2b$12$Bfoo/lwEpgG1w1px9SJ9r.xy3ZSRXyAwpQhmkSgX5VygtM2ErVbnO",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "UP West"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha.landlinebharatfibre.goa@bsnl.in",
+    "mobile": "9000000145",
+    "password": "$2b$12$r6U32qSicpWVzcspmD1mx.jVnpIyvZRU3S8n33VAtmiXHdcsQTvWS",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "Goa"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram.prepaid.goa@bsnl.in",
+    "mobile": "9000000146",
+    "password": "$2b$12$LU9tga.vNuLf1ZInTnZ7eOdsnQjWJaggMvzUEyletbfzPGSqiz4Ka",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "Goa"
+  },
+  {
+    "name": "Pooja",
+    "email": "pooja.gsmpostpaid.goa@bsnl.in",
+    "mobile": "9000000147",
+    "password": "$2b$12$HcnhTh/RVOU65y5l8SF/9.n2muJHkkZRg5ny2bLLQ5U85nJHfADDq",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "Goa"
+  },
+  {
+    "name": "Suresh",
+    "email": "suresh.wings.goa@bsnl.in",
+    "mobile": "9000000148",
+    "password": "$2b$12$71JJF.jcHZQcIEyXc4pb3eFDCkOFBWZ4fn7WuinaItqLv53E2h1Fy",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "Goa"
+  },
+  {
+    "name": "Anjali",
+    "email": "anjali.corporate.goa@bsnl.in",
+    "mobile": "9000000149",
+    "password": "$2b$12$gJWbZAwoMTc.fe.Hgsib2OBAEe/IjHlmzrOR9YnHNasBsG.aAvUf6",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "Goa"
+  },
+  {
+    "name": "Kiran",
+    "email": "kiran.landlinebharatfibre.westbengal@bsnl.in",
+    "mobile": "9000000150",
+    "password": "$2b$12$DIgqnogwu4DrL3rWSS/sq.0/mt95ekTT3TV21kG8Q.zNx3VFlekb.",
+    "role": "staff",
+    "department": "Landline/Bharat Fibre",
+    "circle": "West Bengal"
+  },
+  {
+    "name": "Deepa",
+    "email": "deepa.prepaid.westbengal@bsnl.in",
+    "mobile": "9000000151",
+    "password": "$2b$12$QEs4XJr6iS/eIvkxwstR/uxRccbI8uZBjgspd2Ig0/E7YLItZNSpW",
+    "role": "staff",
+    "department": "Prepaid",
+    "circle": "West Bengal"
+  },
+  {
+    "name": "Manoj",
+    "email": "manoj.gsmpostpaid.westbengal@bsnl.in",
+    "mobile": "9000000152",
+    "password": "$2b$12$m42tzte/ywAo.DAQ1TL9PuzzNDNIZcuot7.G5St2LpgbKUrlxQwIG",
+    "role": "staff",
+    "department": "GSM Postpaid",
+    "circle": "West Bengal"
+  },
+  {
+    "name": "Kavya",
+    "email": "kavya.wings.westbengal@bsnl.in",
+    "mobile": "9000000153",
+    "password": "$2b$12$45UHTiVRLD7j82pSl6JFx.ElhW3wtZH2Gapye3J.5/5Pi9TTw8US2",
+    "role": "staff",
+    "department": "Wings",
+    "circle": "West Bengal"
+  },
+  {
+    "name": "Arjun",
+    "email": "arjun.corporate.westbengal@bsnl.in",
+    "mobile": "9000000154",
+    "password": "$2b$12$xFSxPcTbBa0.zOH.cOKEveOhBWTldCFUWVAeHChw8hbQeX97kqoqG",
+    "role": "staff",
+    "department": "Corporate",
+    "circle": "West Bengal"
+  }
+]

@@ -1,0 +1,161 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="alert alert-success mx-5 mt-3">
+  <strong>Welcome To Admin Dashboard, Mr. <%= admin.name %>!</strong>
+</div>
+
+<section id="admin-dashboard" class="container">
+  <ul class="nav nav-tabs mb-4" id="adminTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="create-tab" data-toggle="tab" href="#create-account" role="tab">
+        <i class="fas fa-tools"></i> Create Accounts
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin/complaints" role="tab">
+        <i class="fas fa-envelope-open-text"></i> Complaints
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin/users/display" role="tab">
+        <i class="fas fa-user-ninja"></i> Users
+      </a>
+    </li>
+    <li class="nav-item ml-auto">
+      <a href="/admin/export" class="btn btn-outline-success btn-sm mr-2 mt-1">
+        <i class="fas fa-file-csv"></i> Export Complaints
+      </a>
+    </li>
+  </ul>
+
+  <div class="row">
+    <!-- Account creation section -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-info text-white">Account Options</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="#" id="create-staff-btn"><i class="fa fa-briefcase"></i> Create Staff Account</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" id="create-admin-btn"><i class="fas fa-user-shield"></i> Create Admin Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right panel with forms and analytics -->
+    <div class="col-md-8">
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="create-account" role="tabpanel">
+          <div id="staff-form" style="display: none;">
+            <div class="card mb-4">
+              <div class="card-header bg-primary text-white">Staff Registration</div>
+              <div class="card-body">
+                <%- include('forms/staff_register') %>
+              </div>
+            </div>
+          </div>
+
+          <div id="admin-form" style="display: none;">
+            <div class="card mb-4">
+              <div class="card-header bg-secondary text-white">Admin Registration</div>
+              <div class="card-body">
+                <%- include('forms/admin_register') %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/messages') %>
+
+      <!-- Analytics Section -->
+      <div class="card mt-4">
+        <div class="card-header bg-dark text-white">📊 Complaint Analytics</div>
+        <div class="card-body">
+          <canvas id="circleChart" height="180"></canvas>
+          <canvas id="statusChart" height="180" class="mt-4"></canvas>
+          <canvas id="techChart" height="180" class="mt-4"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  // Toggle forms
+  const staffBtn = document.getElementById('create-staff-btn');
+  const adminBtn = document.getElementById('create-admin-btn');
+  const staffForm = document.getElementById('staff-form');
+  const adminForm = document.getElementById('admin-form');
+
+  staffBtn.addEventListener('click', e => {
+    e.preventDefault();
+    adminForm.style.display = 'none';
+    staffForm.style.display = 'block';
+  });
+
+  adminBtn.addEventListener('click', e => {
+    e.preventDefault();
+    staffForm.style.display = 'none';
+    adminForm.style.display = 'block';
+  });
+
+  // Chart Data
+  const circleCtx = document.getElementById('circleChart').getContext('2d');
+  const statusCtx = document.getElementById('statusChart').getContext('2d');
+  const techCtx = document.getElementById('techChart').getContext('2d');
+
+  new Chart(circleCtx, {
+    type: 'bar',
+    data: {
+      labels: <%- JSON.stringify((stats.circles || []).map(c => c._id)) %>,
+      datasets: [{
+        label: 'Complaints per State/Circle',
+        data: <%- JSON.stringify((stats.circles || []).map(c => c.count)) %>,
+        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { display: false }
+      }
+    }
+  });
+
+  new Chart(statusCtx, {
+    type: 'doughnut',
+    data: {
+      labels: <%- JSON.stringify((stats.statuses || []).map(s => s._id)) %>,
+      datasets: [{
+        label: 'Complaint Status',
+        data: <%- JSON.stringify((stats.statuses || []).map(s => s.count)) %>,
+        backgroundColor: ['#ffc107', '#17a2b8', '#28a745', '#dc3545']
+      }]
+    }
+  });
+
+  new Chart(techCtx, {
+    type: 'bar',
+    data: {
+      labels: <%- JSON.stringify((stats.techs || []).map(t => t.name)) %>,
+      datasets: [{
+        label: 'Complaints Assigned to Staff',
+        data: <%- JSON.stringify((stats.techs || []).map(t => t.count)) %>,
+        backgroundColor: 'rgba(255, 99, 132, 0.6)'
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { display: false }
+      }
+    }
+  });
+</script>
+
+<%- include('../partials/footer') %>
